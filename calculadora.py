@@ -9,10 +9,10 @@
 # Al utilizar funciones --- Se declara y después se invoca
 
 # Operaciones matemáticas 
-def sumar(num1, num2):
-    return num1 + num2
-   
+def sumar(lista_num):
+    return sum(lista_num)
 
+   
 def restar(num1, num2):
     return num1 - num2
 
@@ -37,7 +37,10 @@ if (operacion_a_realizar == "sumar" or operacion_a_realizar == "restar" or opera
     num2 = float(input("Ingresa el segundo número: "))
 
     if (operacion_a_realizar == "sumar"):
-        resultado = sumar(num1, num2)
+        lista_numeros = []
+        lista_numeros.append(num1)
+        lista_numeros.append(num2)
+        resultado = sumar(lista_numeros)
     elif (operacion_a_realizar == "restar"):
         resultado = restar(num1, num2)
     elif (operacion_a_realizar == "multi"):
