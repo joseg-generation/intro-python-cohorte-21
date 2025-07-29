@@ -20,10 +20,6 @@ welcome_to_user("Alberto")
 # print(operacion_para_sumar(30,100)) # 130
 
 
-
-
-
-
 def resta():
     print(f"{3-2}")
 
